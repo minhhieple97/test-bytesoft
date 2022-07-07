@@ -2,10 +2,10 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
-import { ReportsModule } from './reports/reports.module';
+import { ReportsModule } from './vote/vote.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './users/user.entity';
-import { Report } from './reports/.entity';
+import { Report } from './vote/vote.entity';
 
 @Module({
   imports: [
